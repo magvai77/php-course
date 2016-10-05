@@ -1,13 +1,13 @@
 <?php
-$count = 999999;
-for ($i=100000; $i <= $count; $i++) {
-	$a = substr($i, 0, 1);	
-	$b = substr($i, 1, 1);
-	$c = substr($i, 2, 1);
-	$d = substr($i, 3, 1);
-	$e = substr($i, 4, 1);
-	$f = substr($i, 5, 1);
-		if ($a + $b + $c == $d + $e + $f) {
-			echo "$i<br/>";
-	}
+$count = 1000000;
+$b = 1;
+$c = 0;
+for ($a = 1; $a <= $count; $a++) {
+	$b = substr("00000". "$a", -6);
+		if ($b[0] + $b[1] + $b[2] == $b[3] + $b[4] + $b[5]) {
+		echo "$b<br/>";
+		$c++;
+		}
 }
+$percent = ($c / 999999) * 100;
+echo "Общее количество: $c <br/> Процент от общего количества: $percent%";
