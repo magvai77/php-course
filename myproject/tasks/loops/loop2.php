@@ -1,7 +1,10 @@
 <?php
-$count = 112;
-$a = 0;
-for ($i=1; $i <= $count; $i += 3) {
-	$a = $a + $i;
+function sum($count) {
+	$a = 0;
+	for ($i=1; $i <= $count; $i += 3) {
+		$a = $a + $i;
+	}
+	return $a;
 }
-echo $a;
+$result = sum(112);
+echo $result;

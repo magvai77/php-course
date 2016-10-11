@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="header">
-				<a href="#" title="Magvai"><h1>Mavgai</h1></a>
+				<a href="#" title="Magvai"><h1>Magvai</h1></a>
 		</div>
 		<div class="content">
 		
