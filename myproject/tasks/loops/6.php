@@ -16,27 +16,5 @@ return $result;
 }
 $result = luckyTicket(1000000);
 
-?>
-		<?php require '../../view/header.php'; ?>
-		<?php require '../../view/menu.php'; ?>
-			<div class="workplace">
-				<h1>Loops -> 1</h1>
-				<div class="task-item">
-					Task:<br>
-					Вывести на экран все шестизначные счастливые билеты. Билет называется счастливым, если сумма первых трех цифр в номере билета равна сумме последних трех цифр. Найдите количество счастливых билетов и процент от общего числа билетов.
-
-				</div>
-				<div class="task-item">
-					Input:<br>
-					...
-				</div>
-				<div class="task-item">
-					Output:<br>
-					<?php echo $result; ?>
-				</div>
-				<div class="task-item">
-					Code:<br>
-					...
-				</div>
-			</div>
-		<?php require '../../view/footer.php'; ?>
+$description = 'раз два';
+$inputdata = 'три четыре';

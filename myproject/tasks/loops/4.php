@@ -19,26 +19,5 @@ function random3($min,$max) {
 }
 $result = random3(0,100);
 
-?>
-		<?php require '../../view/header.php'; ?>
-		<?php require '../../view/menu.php'; ?>
-			<div class="workplace">
-				<h1>Loops -> 1</h1>
-				<div class="task-item">
-					Task:<br>
-					Вывести 3 случайных числа от 0 до 100 без повторений.
-				</div>
-				<div class="task-item">
-					Input:<br>
-					...
-				</div>
-				<div class="task-item">
-					Output:<br>
-					<?php echo $result; ?>
-				</div>
-				<div class="task-item">
-					Code:<br>
-					...
-				</div>
-			</div>
-		<?php require '../../view/footer.php'; ?>
+$description = 'раз два';
+$inputdata = 'три четыре';

@@ -2,7 +2,7 @@
 				<ul>
 					<li>Loop
 						<ol>
-							<li><a href="/tasks/loops/1.php">1</a></li>
+							<li><a href="loops-1">1</a></li>
 							<li><a href="/tasks/loops/2.php">2</a></li>
 							<li><a href="/tasks/loops/3.php">3</a></li>
 							<li><a href="/tasks/loops/4.php">4</a></li>

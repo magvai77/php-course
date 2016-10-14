@@ -9,5 +9,5 @@ function sayHello($count = 1)
 }
 $result = sayHello(10);
 
-$description = '';
-$inputdata = '';
+$description = 'раз два';
+$inputdata = 'три четыре';
