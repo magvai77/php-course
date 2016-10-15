@@ -2,12 +2,12 @@
 				<ul>
 					<li>Loops
 						<ol>
-							<li><a href="loops-1">1</a></li>
-							<li><a href="loops-2">2</a></li>
-							<li><a href="loops-3">3</a></li>
-							<li><a href="loops-4">4</a></li>
-							<li><a href="loops-5">5</a></li>
-							<li><a href="loops-6">6</a></li>
+							<li><a href="/tasks/loops-1">1</a></li>
+							<li><a href="/tasks/loops-2">2</a></li>
+							<li><a href="/tasks/loops-3">3</a></li>
+							<li><a href="/tasks/loops-4">4</a></li>
+							<li><a href="/tasks/loops-5">5</a></li>
+							<li><a href="/tasks/loops-6">6</a></li>
 						<ol/>
 					</li>
 					</ul>
