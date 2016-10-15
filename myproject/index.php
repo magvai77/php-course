@@ -1,95 +1,41 @@
 <?php
-$path = '';
-$flag = false;
-if (!empty($_GET['path'])) {
-	$path = $_GET['path'];
-	$flag = true;
-	$map = [
-		"loops" => [
-			"title" => "Loops",
-			"tasks" => ["1.php",
-						"2.php",
-						"3.php",
-						"4.php",
-						"5.php",
-						"6.php"
-			]
-		],
-		"arrays1" => [
-			"title" => "Arrays 1",
-			"tasks" => ["1.php",
-						"2.php",
-						"3.php",
-						"4.php",
-						"5.php",
-						"6.php"
-			]
-		],
-		"arrays2" => [
-			"title" => "Arrays 2",
-			"tasks" => ["1.php",
-						"2.php",
-						"3.php",
-						"4.php",
-						"5.php",
-						"6.php"
-			]
-		],
-				"function" => [
-			"title" => "Function",
-			"tasks" => ["1.php",
-						"2.php",
-						"3.php",
-						"4.php",
-						"5.php"
-			]
-		]
-	];
+require_once __DIR__ . '/library/index.php';
+$pageCode = 'index';
+$pageParameters = [];
+$urlChunks = [];
+	if (!empty($_GET['path'])) {
+		$urlChunks = explode('/', $_GET['path']);
+		if (!empty($urlChunks[0])) {
+		$pageCode = $urlChunks[0];		
+		}	
+		if (!empty($urlChunks[1])) {
+		$pageParameters = explode('-', $urlChunks[1]);		
+		}
+	}
+// var_dump($urlChunks);
+// print_r(sprintf('Page code: %s, Page Parameters: %s', $pageCode,  var_export($pageParameters, true)));
 
-	$pathchunks = explode('-', $path);
+switch ($pageCode) {
+	case 'tasks':
+		$section = (!empty($pageParameters[0])) ? $pageParameters[0] : '';
+		$taskNumber = (!empty($pageParameters[1])) ? $pageParameters[1] : 0;
+		$pageData = getTask($section, $taskNumber);
+		break;
+	default:
+		$pageData = [];
+		break;
+}
 
-	$section = $pathchunks[0];
-	$tasks = $pathchunks[1];
-
-	$sectionData = $map[$section];
-	$taskName = $tasks;
-	$titlechunks = [
-		$sectionData['title'],
-		$taskName
-	];
-
-	$pagetitle = implode(' -> ', $titlechunks);
-
-	require __DIR__ . '/tasks/' . $section . '/' . $tasks . '.php';
-
+$pathToView = __DIR__ . '/view/pages/' . $pageCode . '.php';
+if (!file_exists($pathToView)) {
+	$pageCode = '404';
+	$pathToView = __DIR__ . '/view/pages/' . $pageCode . '.php';
 }
 ?>
 
 
 <?php require 'view/header.php';
 require 'view/menu.php'; ?>
-	
-	<div class="workplace">
- 		<?php if ($flag == true) { ?>
-				<h1> <?php echo $pagetitle ?></h1>
-				<div class="task-item">
-					Task:<br>
-					<?php echo $description ?>
-				</div>
-				<div class="task-item">
-					Input:<br>
-					<?php echo $inputdata ?>
-				</div>
-				<div class="task-item">
-					Output:<br>
-					<?php echo $result ?>
-				</div>
-				<div class="task-item">
-					Code:<br>
-				</div>
-			</div>
-			<?php  } else {?>
-			<img src="/html/images/pikachu.jpg">
-			<?php } ?>
-		<?php require 'view/footer.php'; ?>
-
+<div class="workplace">
+	<?php require $pathToView; ?>
+<?php require 'view/footer.php'; ?>

@@ -11,10 +11,10 @@ function luckyTicket($count) {
 			}
 	}
 $percent = ($qt / 999999) * 100;
-$result = "Lucky tikets: $numberlt<br> Count lucky ticket: $qt <br/> Percent of the total: $percent";
+$result = "Lucky tikets: $numberlt<br> Count lucky ticket: $qt <br/> Percent of the total: $percent" . " %";
 return $result;
 }
 $result = luckyTicket(1000000);
 
-$description = 'раз два';
-$inputdata = 'три четыре';
+$description = 'one two';
+$inputData = 'one two';

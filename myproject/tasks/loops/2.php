@@ -8,5 +8,5 @@ function sum($count) {
 }
 $result = sum(112);
 
-$description = 'раз два';
-$inputdata = 'три четыре';
+$description = 'one two';
+$inputData = 'one two';
