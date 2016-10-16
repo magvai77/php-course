@@ -13,4 +13,5 @@ function percentCorrection($array, $percent)
 }
 
 $result = percentCorrection([1,2,3,4,5,1.5,400,0.8,2.5], 7);
-var_dump($result);
+$description = 'Разработать функцию, которая вносит процентную коррекцию в массив чисел(целых, дробных или смешанных не имеет значения)';
+$inputData = "[1,2,3,4,5,1.5,400,0.8,2.5], 7";

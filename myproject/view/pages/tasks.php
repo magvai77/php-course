@@ -9,7 +9,7 @@
 			</div>
 			<div class="task-item">
 				Output:<br>
-				<?php echo $pageData['result'] ?>
+				<pre> <?php print_r($pageData['result']) ?> </pre>
 			</div>
 			<div class="task-item">
 				Code:<br>

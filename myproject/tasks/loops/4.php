@@ -1,5 +1,6 @@
 <?php
-function random3($min,$max) {
+function random3($min,$max)
+{
 	$relult = '';
 	do {	
 		$a = mt_rand($min,$max);
@@ -17,7 +18,7 @@ function random3($min,$max) {
 			}
 	} while (1);
 }
-$result = random3(0,100);
 
-$description = 'раз два';
-$inputdata = 'три четыре';
+$result = random3(0,100);
+$description = 'Вывести 3 случайных числа от 0 до 100 без повторений.';
+$inputData = '';

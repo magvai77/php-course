@@ -9,4 +9,5 @@ return $a;
 }
 
 $result = factorial(7);
-echo $result;
+$description = 'Разработать функцию вычисления факториала заданного числа (n!)';
+$inputData = "7!";

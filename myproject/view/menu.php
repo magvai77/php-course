@@ -1,39 +1,41 @@
-			<div class="menu">
-				<ul>
-					<li>Loops
-						<ol>
-							<li><a href="/tasks/loops-1">1</a></li>
-							<li><a href="/tasks/loops-2">2</a></li>
-							<li><a href="/tasks/loops-3">3</a></li>
-							<li><a href="/tasks/loops-4">4</a></li>
-							<li><a href="/tasks/loops-5">5</a></li>
-							<li><a href="/tasks/loops-6">6</a></li>
-						<ol/>
-					</li>
-					</ul>
-					<ul>
-					<li>Arrays - 1
-						<ol>
-							<li><a href="array1/1.php">1</a></li>
-							<li><a href="array1/2.php">2</a></li>
-							<li><a href="array1/3.php">3</a></li>
-							<li><a href="array1/4.php">4</a></li>
-							<li><a href="array1/5.php">5</a></li>
-							<li><a href="array1/6.php">6</a></li>
-							<li><a href="#">7</a></li>
-						</ol>			
-					</li>
-				</ul>
-					<ul>
-					<li>Arrays - 2
-						<ol>
-							<li><a href="/array2.1.php">1</a></li>
-							<li><a href="/array2.1.php"">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#">4</a></li>
-							<li><a href="#">5</a></li>
-							<li><a href="#">6</a></li>
-						</ol>			
-					</li>
-				</ul>
-			</div>
+<div class="menu">
+	<li>Loops
+		<ul>
+			<li><a href="/tasks/loops-1">1</a></li>
+			<li><a href="/tasks/loops-2">2</a></li>
+			<li><a href="/tasks/loops-3">3</a></li>
+			<li><a href="/tasks/loops-4">4</a></li>
+			<li><a href="/tasks/loops-5">5</a></li>
+			<li><a href="/tasks/loops-6">6</a></li>
+		</ul>
+	</li>
+	<li>Arrays - 1
+		<ul>
+			<li><a href="/tasks/arrays1-1">1</a></li>
+			<li><a href="/tasks/arrays1-2">2</a></li>
+			<li><a href="/tasks/arrays1-3">3</a></li>
+			<li><a href="/tasks/arrays1-4">4</a></li>
+			<li><a href="/tasks/arrays1-5">5</a></li>
+			<li><a href="/tasks/arrays1-6">6</a></li>
+			<li><a href="/tasks/arrays1-7">7</a></li>
+		</ul>			
+	</li>
+	<li>Arrays - 2
+		<ul>
+			<li><a href="/tasks/arrays2-1">1</a></li>
+			<li><a href="/tasks/arrays2-2">2</a></li>
+			<li><a href="/tasks/arrays2-3">3</a></li>
+			<li><a href="/tasks/arrays2-4">4</a></li>
+			<li><a href="/tasks/arrays2-5">5</a></li>
+		</ul>			
+	</li>
+	<li>Function
+		<ul>
+			<li><a href="/tasks/function-1">1</a></li>
+			<li><a href="/tasks/function-2">2</a></li>
+			<li><a href="/tasks/function-3">3</a></li>
+			<li><a href="/tasks/function-4">4</a></li>
+			<li><a href="/tasks/function-5">5</a></li>
+		</ul>			
+	</li>
+</div>
