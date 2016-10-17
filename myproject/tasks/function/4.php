@@ -1,4 +1,5 @@
 <?php
+// Получаем массив с книгами
 function getBooksArray($file)
 {
 	$books = fopen($file, "r");
@@ -15,6 +16,7 @@ function getBooksArray($file)
 	fclose($books);
 }
 
+// Получение статуса книг
 function bookStatus($file,$status)
 {
 	$array = getBooksArray($file);
@@ -25,6 +27,7 @@ function bookStatus($file,$status)
 		}
 }
 
+// Вывод списка книг в читаемом виде
 function bookslist($file) 
 {
 	$array = getBooksArray($file);
