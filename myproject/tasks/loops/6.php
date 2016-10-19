@@ -6,10 +6,10 @@ function luckyTicket($count)
 	$numberlt = '';
 		for ($a = 1; $a <= $count; $a++) {
 			$b = substr("00000". "$a", -6);
-				if ($b[0] + $b[1] + $b[2] == $b[3] + $b[4] + $b[5]) {
+			if ($b[0] + $b[1] + $b[2] == $b[3] + $b[4] + $b[5]) {
 				$numberlt .= "<br/>$b";
 				$qt++;
-				}
+			}
 		}
 	$percent = ($qt / 999999) * 100;
 	$result = "<br/>Count lucky ticket: $qt <br/>Percent of the total: $percent" . " %" . "<br/>Lucky tikets: $numberlt<br/>";
