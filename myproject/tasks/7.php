@@ -1,5 +1,6 @@
 <?php
-function getTodayAnyFormat(){
+function getTodayAnyFormat()
+{
 	$format1 = date("Y-m-d");
 	$format2 = date("d.m.Y");
 	$format3 = date("d.m.y");
