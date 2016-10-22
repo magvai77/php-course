@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/library/index.php';
+require_once __DIR__ . '/../src/library/index.php';
 $pageCode = 'index';
 $pageParameters = [];
 $urlChunks = [];
@@ -26,16 +26,16 @@ switch ($pageCode) {
 		break;
 }
 
-$pathToView = __DIR__ . '/view/pages/' . $pageCode . '.php';
+$pathToView = __DIR__ . '/../src/view/pages/' . $pageCode . '.php';
 if (!file_exists($pathToView)) {
 	$pageCode = '404';
-	$pathToView = __DIR__ . '/view/pages/' . $pageCode . '.php';
+	$pathToView = __DIR__ . '/../src/view/pages/' . $pageCode . '.php';
 }
 ?>
 
 
-<?php require 'view/header.php';
-require 'view/menu.php'; ?>
+<?php require '../src/view/header.php';
+require '../src/view/menu.php'; ?>
 <div class="workplace">
 	<?php require $pathToView; ?>
-<?php require 'view/footer.php'; ?>
+<?php require '../src/view/footer.php'; ?>
