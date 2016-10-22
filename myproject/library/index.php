@@ -40,6 +40,12 @@ return [
 							"4.php",
 							"5.php"
 				]
+			],
+						"mysql" => [
+				"title" => "MySQL",
+				"tasks" => ["1.php",
+							"2.php"
+				]
 			]
 		];
 

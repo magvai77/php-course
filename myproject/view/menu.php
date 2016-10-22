@@ -38,4 +38,10 @@
 			<li><a href="/tasks/function-5">5</a></li>
 		</ul>			
 	</li>
+	<li>MySQL
+		<ul>
+			<li><a href="/tasks/mysql-1">1</a></li>
+			<li><a href="/tasks/mysql-2">2</a></li>
+		</ul>			
+	</li>
 </div>
