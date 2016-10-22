@@ -1,8 +1,7 @@
 <?php
 function getDateFormat($day, $month, $year)
 {
-	$result = date('d.m.Y', mktime(0, 0, 0, $month, $day, $year));
-	return $result;
+	return date('d.m.Y', mktime(0, 0, 0, $month, $day, $year));	
 }
 
 $result = getDateFormat(2, 13, 2015);
