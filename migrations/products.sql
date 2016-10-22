@@ -1,6 +1,6 @@
 CREATE DATABASE market;
 USE market;
-GRANT ALL ON market.* TO 'market'@'localhost' IDENTIFIED BY 'market';
+GRANT ALL ON publications.* TO 'isaev'@'localhost' IDENTIFIED BY 'isaev';
 
 CREATE TABLE zergs (id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY, unit VARCHAR(128),description TEXT(1024),price VARCHAR(4)) ENGINE InnoDB;
 
