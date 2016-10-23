@@ -44,7 +44,8 @@ return [
 						"mysql" => [
 				"title" => "MySQL",
 				"tasks" => ["1.php",
-							"2.php"
+							"2.php",
+							"3.php"
 				]
 			]
 		];

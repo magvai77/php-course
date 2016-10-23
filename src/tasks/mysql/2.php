@@ -12,13 +12,13 @@ function dbConnect($dsn, $username, $password)
 
 function dbQuery($dbConnection, $query)
 {
-	if ($dbConnection or $query != NULL) {
+	if ($dbConnection and $query != NULL) {
 		$statement = $dbConnection->query($query);
 		$statement->setFetchMode(PDO::FETCH_ASSOC);
 		$rows = $statement->fetchALL();
 		var_dump($rows);
 	} else {
-		return [];
+		return NULL;
 	}
 }
 

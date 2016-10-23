@@ -3,15 +3,15 @@
 function getBooksArray($file)
 {
 	$books = fopen($file, "r");
-	while (($a = fgets($books)) !== false) {
-		$b = explode('|', $a);
-		$array[] = [
+		while (($a = fgets($books)) !== false) {
+			$b = explode('|', $a);
+			$array[] = [
 				"title"  =>  $b[0],
 				"autor"  =>  $b[1],
 				"print"  =>  $b[2],
 				"status" => $b[3]
-		];
-	}
+			];
+		}
 	return $array;
 	fclose($books);
 }
@@ -36,7 +36,7 @@ function bookslist($file)
 		}
 }
 
-
-bookslist("books.txt");
-bookStatus("books.txt", 0);
-getBooksArray("books.txt");
+$file = "/var/www/html/src/tasks/function/books.txt";
+bookslist($file);
+bookStatus($file, 0);
+getBooksArray($file);

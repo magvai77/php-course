@@ -42,6 +42,7 @@
 		<ul>
 			<li><a href="/tasks/mysql-1">1</a></li>
 			<li><a href="/tasks/mysql-2">2</a></li>
+			<li><a href="/tasks/mysql-3">3</a></li>
 		</ul>			
 	</li>
 </div>
