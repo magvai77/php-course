@@ -13,7 +13,7 @@ function getBooksArray($file)
 			];
 		}
 	return $array;
-	fclose($books);
+	fclose($file);
 }
 
 // Получение статуса книг
