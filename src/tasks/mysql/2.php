@@ -16,7 +16,6 @@ function dbQuery($dbConnection, $query)
 		$statement = $dbConnection->query($query);
 		$statement->setFetchMode(PDO::FETCH_ASSOC);
 		$rows = $statement->fetchALL();
-		var_dump($rows);
 	} else {
 		return NULL;
 	}
