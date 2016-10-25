@@ -12,8 +12,8 @@ function getBooksArray($file)
 				"status" => $b[3]
 			];
 		}
-	return $array;
 	fclose($books);
+	return $array;
 }
 
 // Получение статуса книг
