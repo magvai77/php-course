@@ -1,5 +1,5 @@
 <?php
-function sayHello($count = 1)
+function sayHello($count)
 {
 	$result = '';
 	for ($i=0; $i < $count; $i++) {
@@ -7,7 +7,13 @@ function sayHello($count = 1)
 	}
 	return $result;
 }
-$result = sayHello(10);
 
-$description = 'Выведите  10 раз фразу "Hello"';
-$inputData = '';
+function taskFunction($count)
+{
+	return sayHello($count);
+}
+
+// $result = sayHello(6);
+
+// $description = 'Выведите  10 раз фразу "Hello"';
+// $inputData = '';

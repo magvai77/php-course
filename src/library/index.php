@@ -41,7 +41,7 @@ return [
 							"5.php"
 				]
 			],
-						"mysql" => [
+			"mysql" => [
 				"title" => "MySQL",
 				"tasks" => ["1.php",
 							"2.php",
@@ -68,7 +68,7 @@ function getTask($section, $taskNumber)
 		
 	$taskMap = getTaskMap();
 	$title = getTaskTitle($section, $taskNumber);
-
+	$description = '';
 	require __DIR__ . '/../tasks/' . $section . '/' . $taskNumber . '.php';
 return [
 	'title' => $title,
