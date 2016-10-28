@@ -8,7 +8,7 @@ function sayHello($count)
 	return $result;
 }
 
-function taskFunction($count)
+function taskFunction(array $data)
 {
 	return sayHello($count);
 }

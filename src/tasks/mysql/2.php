@@ -16,20 +16,27 @@ function dbQuery($dbConnection, $query)
 		$statement = $dbConnection->query($query);
 		$statement->setFetchMode(PDO::FETCH_ASSOC);
 		$rows = $statement->fetchALL();
+		return $rows;
 	} else {
 		return NULL;
 	}
 }
 
-$dsn = 'mysql:host=localhost;dbname=market';
-$username = 'market';
-$password = 'market';
-$query = 'SELECT * FROM zergs';
-$dbConnection = dbConnect($dsn, $username, $password);
-dbQuery($dbConnection, $query);
+function taskFunction(array $data)
+{
+	$config = new Config(__DIR__ . '/../../config/config.php');
+	$dbParameters = $config->get('db');
+	$dsn = $dbParameters['dsn'];
+	$username = $dbParameters['username'];
+	$password = $dbParameters['password'];
+	$query = 'SELECT * FROM zergs';
+	$dbConnection = dbConnect($dsn, $username, $password);
+	return dbQuery($dbConnection, $query);
+}
 
 
-$result = '';
 
-$description = '';
-$inputData = '';
+// $result = '';
+
+// $description = '';
+// $inputData = '';

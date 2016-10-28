@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../classes/Task.php';
+require_once __DIR__ . '/../classes/Config.php';
 
 function getTaskMap()
 {
@@ -56,7 +57,6 @@ return [
 				]
 			]
 		];
-
 }
 
 function getTaskTitle($section, $taskNumber) 
@@ -77,14 +77,14 @@ function getTask($section, $taskNumber)
 	$title = getTaskTitle($section, $taskNumber);
 	$description = '';
 	$categoryCode = $section;
-	$task = new Task($taskNumber, $categoryCode, $description);
+	$task = new Task($categoryCode, $taskNumber, $description);
 	$inputData = [];
 	$result = $task->run($inputData);
 	
 	
 	return [
 		'title' => $title,
-		'description' => $task->getDescription(),
+		'description' => $task->description,
 		'inputData' => '',
 		'result' => $result
 	];
